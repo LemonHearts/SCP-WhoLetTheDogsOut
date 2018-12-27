@@ -23,7 +23,7 @@ namespace WhoLetTheDogsOut
 
         public override void OnEnable()
         {
-            Info("Bork Bork Bork - Enabled");
+            Info("Bark Bark Bark - Enabled");
         }
 
         public override void Register()
