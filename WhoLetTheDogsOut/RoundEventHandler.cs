@@ -25,10 +25,7 @@ namespace WhoLetTheDogsOut
         {
             if(GamemodeManager.GamemodeManager.GetCurrentMode().Equals(plugin))
             {
-                for(int i = 0; i < ev.playerList.Count;i++)
-                {
-                    ev.playerList.spawnMTF = true;
-                }
+                ev.spawnMTF = true;
             }
         }
     }
