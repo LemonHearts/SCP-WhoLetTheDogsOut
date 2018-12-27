@@ -20,5 +20,16 @@ namespace WhoLetTheDogsOut
                 ev.SCP939_89amount = 4;
             }
         }
+        
+        public void OnTeamRespawn(SetTeamRespawnEvent ev)
+        {
+            if(GamemodeManager.GamemodeManager.GetCurrentMode().Equals(plugin))
+            {
+                for(int i = 0; i < ev.playerList.Count;i++)
+                {
+                    ev.playerList.spawnMTF = true;
+                }
+            }
+        }
     }
 }
